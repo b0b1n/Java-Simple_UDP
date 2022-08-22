@@ -2,7 +2,7 @@ package simple_udp1;
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.Inet6Address;
+import java.net.InetAddress;
 import java.util.Scanner;
 
 public class Receiver {
@@ -20,10 +20,10 @@ public class Receiver {
 		
 		socket.receive(packet); // retrieve the Sender's message
 		
-		String message = new String(buffer).trim(); // trim() is called to get rid of any unecessary data that comes after the message
+		String message = new String(buffer).trim(); // trim() is called to get rid of any unnecessary data that comes after the message
 		System.out.println("Received : "+message);
 		
-		Inet6Address senders_address = (Inet6Address) packet.getAddress();
+		InetAddress senders_address = packet.getAddress();
 		int senders_port = packet.getPort();
 		
 		System.out.print("Enter your message : ");
