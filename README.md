@@ -21,5 +21,6 @@ after the sent of the message 'Hello :)' , the Receiver writes the message 'bye 
 4. #### The sender also receives the final message 
 ![ The Sender receives](https://github.com/b0b1n/Simple_UDP/blob/main/images/simple_udp1/Sender%20receives.png)
 
-
+##  Second package : simple_udp_2
+Added the possibility to keep on sending messages until the sender quits by typing 'exit' (not case sensitive)
 
